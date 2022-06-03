@@ -2,10 +2,10 @@ import React, { useEffect, useRef } from "react";
 import { init } from "ityped";
 
 const Roles = () => {
-  const textRef = useRef();
+  const itypedText = useRef();
 
   useEffect(() => {
-    init(textRef.current, {
+    init(itypedText.current, {
       showCursor: true,
       typeSpeed: 100,
       backDelay: 1700,
@@ -22,7 +22,7 @@ const Roles = () => {
   return (
     <div className="Roles">
       <span className="Bracket">{"{"}</span>
-      <div ref={textRef}></div>
+      <div ref={itypedText}></div>
       <span className="Bracket">{" }"}</span>
     </div>
   );

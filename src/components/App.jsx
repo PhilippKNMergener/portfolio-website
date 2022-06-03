@@ -7,7 +7,7 @@ import Landing from "./Landing/Landing";
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="App" onWheel={() => {}}>
       <NavBar />
       <MainWrap>
         <Landing />

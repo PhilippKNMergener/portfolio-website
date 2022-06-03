@@ -6,7 +6,7 @@ const NavLinkWrap = ({ children }) => {
 };
 
 NavLinkWrap.propTypes = {
-  children: PropTypes.children,
+  children: PropTypes.array,
 };
 
 export default NavLinkWrap;

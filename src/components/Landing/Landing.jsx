@@ -1,4 +1,5 @@
 import React from "react";
+import ContinueText from "./ContinueText";
 import Greeting from "./Greeting";
 import "./Landing.scss";
 import Name from "./Name";
@@ -14,6 +15,7 @@ const Landing = () => {
           <Name />
           <Roles />
         </div>
+        <ContinueText />
       </div>
       <ScrollDown />
     </div>

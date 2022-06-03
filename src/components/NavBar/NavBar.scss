@@ -7,9 +7,11 @@ $textcolor: #aaa;
   box-shadow: 0 0 50px 5px #00000055;
   width: 100vw;
   height: 90px;
-  z-index: 2;
   position: fixed;
   top: 0;
+  .is-pinned {
+    background-color: red;
+  }
 
   .NavWrap {
     height: inherit;

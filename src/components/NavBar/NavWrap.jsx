@@ -6,7 +6,7 @@ const NavWrap = ({ children }) => {
 };
 
 NavWrap.propTypes = {
-  children: PropTypes.children,
+  children: PropTypes.array,
 };
 
 export default NavWrap;

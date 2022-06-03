@@ -6,7 +6,7 @@ const MainWrap = ({ children }) => {
 };
 
 MainWrap.propTypes = {
-  children: PropTypes.children,
+  children: PropTypes.array,
 };
 
 export default MainWrap;

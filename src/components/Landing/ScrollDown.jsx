@@ -4,7 +4,7 @@ import { BsArrowRight } from "react-icons/bs";
 const ScrollDown = () => {
   return (
     <div className="ScrollDown">
-      <span>ScrollDown</span>
+      <span className="ScrollText">ScrollDown</span>
       <BsArrowRight />
     </div>
   );

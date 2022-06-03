@@ -15,38 +15,43 @@ $brightcolor: #eee;
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    justify-content: start;
+    justify-content: center;
 
     .Title {
       display: flex;
       flex-direction: column;
       align-items: baseline;
+      justify-content: center;
 
       .Greeting {
         font-size: 20px;
+        padding-bottom: 10px;
       }
 
       .Name {
         color: $brightcolor;
         font-size: 80px;
         font-weight: 600;
-        padding-top: 15px;
+        padding-top: 10px;
         padding-bottom: 30px;
       }
 
       .Roles {
         display: flex;
+        align-items: center;
         color: $accentcolor;
         font-size: 35px;
 
         .Bracket {
-          padding: 0 10px;
+          padding: 0 10px 5px;
+          font-family: "Roboto Mono", monospace;
         }
       }
     }
 
     .ContinueText {
-      padding-top: 0px;
+      position: relative;
+      top: 100px;
       font-weight: 300;
       font-size: 16px;
     }
@@ -59,7 +64,7 @@ $brightcolor: #eee;
     transform-origin: 0 0;
     transform: rotate(90deg);
 
-    span {
+    .ScrollText {
       padding-right: 20px;
     }
   }
