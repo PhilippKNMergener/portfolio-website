@@ -1,0 +1,13 @@
+$bgcolor: #002222;
+$accentcolor: #00c4c4;
+$textcolor: #aaa;
+$brightcolor: #eee;
+
+.About {
+  height: inherit;
+  width: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $textcolor;
+}

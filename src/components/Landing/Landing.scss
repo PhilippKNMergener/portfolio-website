@@ -1,0 +1,102 @@
+$bgcolor: #002222;
+$accentcolor: #00c4c4;
+$textcolor: #aaa;
+$brightcolor: #eee;
+
+.Landing {
+  height: inherit;
+  width: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: $textcolor;
+
+  .Left {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: start;
+
+    .Title {
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+
+      .Greeting {
+        font-size: 20px;
+      }
+
+      .Name {
+        color: $brightcolor;
+        font-size: 80px;
+        font-weight: 600;
+        padding-top: 15px;
+        padding-bottom: 30px;
+      }
+
+      .Roles {
+        display: flex;
+        color: $accentcolor;
+        font-size: 35px;
+
+        .Bracket {
+          padding: 0 10px;
+        }
+      }
+    }
+
+    .ContinueText {
+      padding-top: 0px;
+      font-weight: 300;
+      font-size: 16px;
+    }
+  }
+
+  .ScrollDown {
+    display: flex;
+    align-items: center;
+    color: $accentcolor;
+    transform-origin: 0 0;
+    transform: rotate(90deg);
+
+    span {
+      padding-right: 20px;
+    }
+  }
+}
+
+.ityped-cursor {
+  font-size: 2.2rem;
+  opacity: 1;
+  -webkit-animation: blink 0.5s infinite;
+  -moz-animation: blink 0.5s infinite;
+  animation: blink 0.5s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 100;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes blink {
+  50% {
+    opacity: 100;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes blink {
+  50% {
+    opacity: 100;
+  }
+  100% {
+    opacity: 0;
+  }
+}

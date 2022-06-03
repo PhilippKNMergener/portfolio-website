@@ -1,0 +1,40 @@
+$bgcolor: #002222;
+$accentcolor: #00c4c4;
+$textcolor: #aaa;
+
+.NavBar {
+  background: #002222bb;
+  box-shadow: 0 0 50px 5px #00000055;
+  width: 100vw;
+  height: 90px;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+
+  .NavWrap {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 75px;
+
+    .Logo {
+      font-family: "Roboto Mono", monospace;
+      text-decoration: none;
+      color: $accentcolor;
+    }
+
+    .NavLinkWrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .NavLink {
+        text-decoration: none;
+        color: $textcolor;
+        padding: 0 30px;
+        font-size: 17px;
+      }
+    }
+  }
+}
