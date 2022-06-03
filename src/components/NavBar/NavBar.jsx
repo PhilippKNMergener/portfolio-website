@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import NavWrap from "./NavWrap";
 import Logo from "./Logo";
 import "./NavBar.scss";
@@ -7,6 +7,8 @@ import NavLinkWrap from "./NavLinkWrap";
 
 const NavBar = () => {
   const sections = ["About", "Skills", "Projects", "Contact"];
+  const [atTop, setAtTop] = useState();
+  const checkAtTop = new IntersectionObserver(setAtTop(true));
   return (
     <div className="NavBar">
       <NavWrap>

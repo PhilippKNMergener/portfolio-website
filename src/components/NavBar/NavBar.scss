@@ -3,15 +3,13 @@ $accentcolor: #00c4c4;
 $textcolor: #aaa;
 
 .NavBar {
-  background: #002222bb;
-  box-shadow: 0 0 50px 5px #00000055;
+  background: #002222;
   width: 100vw;
   height: 90px;
-  position: fixed;
+  position: sticky;
   top: 0;
-  .is-pinned {
-    background-color: red;
-  }
+  box-shadow: 0 0 50px 5px #00000055;
+  z-index: 3;
 
   .NavWrap {
     height: inherit;
