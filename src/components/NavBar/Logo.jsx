@@ -3,7 +3,7 @@ import React from "react";
 const Logo = () => {
   return (
     <h1>
-      <a href="/" className="Logo">
+      <a href="#Landing" className="Logo">
         .Phlpp
       </a>
     </h1>

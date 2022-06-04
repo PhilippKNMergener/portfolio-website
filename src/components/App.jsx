@@ -1,18 +1,17 @@
 import React from "react";
 import "./App.scss";
 import About from "./About/About";
-import MainWrap from "./MainWrap";
 import NavBar from "./NavBar/NavBar";
 import Landing from "./Landing/Landing";
+import SocialsBar from "./SocialsBar/SocialsBar";
 
 const App = () => {
   return (
-    <div className="App" onWheel={() => {}}>
-      <MainWrap>
-        <NavBar />
-        <Landing />
-        <About />
-      </MainWrap>
+    <div className="App">
+      <NavBar />
+      <SocialsBar />
+      <Landing />
+      <About />
     </div>
   );
 };

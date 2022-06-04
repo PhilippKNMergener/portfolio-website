@@ -17,7 +17,7 @@ const Roles = () => {
         "Coffee Lover",
       ],
     });
-  });
+  }, []);
 
   return (
     <div className="Roles">

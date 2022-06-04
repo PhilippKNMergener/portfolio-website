@@ -1,0 +1,59 @@
+$bgcolor: #002222;
+$accentcolor: #00c4c4;
+$textcolor: #aaa;
+
+.NavBar {
+  background: #002222f5;
+  box-shadow: 0 0 50px 5px #00000055;
+  width: 100vw;
+  height: 90px;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+
+  .NavWrap {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 75px;
+    .NavLeft {
+      display: flex;
+      align-items: center;
+      .Logo {
+        font-family: "Roboto Mono", monospace;
+        text-decoration: none;
+        color: $accentcolor;
+        margin-right: 50px;
+      }
+      .Email {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .Icon {
+          margin-right: 10px;
+          margin-top: 8px;
+          color: $textcolor;
+        }
+        .Text {
+          margin-top: 5px;
+          color: $textcolor;
+          font-weight: 300;
+        }
+      }
+    }
+
+    .NavLinkWrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .NavLink {
+        text-decoration: none;
+        color: $textcolor;
+        padding: 0 30px;
+        font-size: 17px;
+      }
+    }
+  }
+}

@@ -6,6 +6,7 @@ $brightcolor: #eee;
 .Landing {
   height: inherit;
   width: inherit;
+  scroll-snap-align: start;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -25,6 +26,7 @@ $brightcolor: #eee;
 
       .Greeting {
         font-size: 20px;
+        font-family: "Roboto Mono", monospace;
         padding-bottom: 10px;
       }
 

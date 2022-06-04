@@ -1,0 +1,32 @@
+.SocialsBar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: baseline;
+  row-gap: 5px;
+  position: fixed;
+  width: 50px;
+  top: calc(90px + 30px);
+  left: 60px;
+
+  .BorderLine {
+    width: inherit;
+    height: 3px;
+  }
+  .Icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: $textcolor;
+    margin: 10px 0;
+    .Icon {
+      color: $textcolor;
+      font-size: 25px;
+      margin: 25px 0;
+
+      &:hover {
+        color: $accentcolor;
+      }
+    }
+  }
+}

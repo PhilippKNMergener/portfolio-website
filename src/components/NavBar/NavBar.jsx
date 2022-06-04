@@ -1,26 +1,29 @@
-import React, { useState } from "react";
-import NavWrap from "./NavWrap";
+import React from "react";
 import Logo from "./Logo";
-import "./NavBar.scss";
 import NavLink from "./NavLink";
-import NavLinkWrap from "./NavLinkWrap";
+import PropTypes from "prop-types";
+import Email from "./Email";
 
-const NavBar = () => {
+const NavBar = ({ isAtTop }) => {
   const sections = ["About", "Skills", "Projects", "Contact"];
-  const [atTop, setAtTop] = useState();
-  const checkAtTop = new IntersectionObserver(setAtTop(true));
   return (
-    <div className="NavBar">
-      <NavWrap>
-        <Logo />
-        <NavLinkWrap>
+    <div className={`NavBar ${isAtTop && "atTop"}`}>
+      <div className="NavWrap">
+        <div className="NavLeft">
+          <Logo />
+          <Email />
+        </div>
+        <div className="NavLinkWrap">
           {sections.map((section) => {
             return <NavLink key={section} target={section} />;
           })}
-        </NavLinkWrap>
-      </NavWrap>
+        </div>
+      </div>
     </div>
   );
 };
 
+NavBar.propTypes = {
+  isAtTop: PropTypes.bool,
+};
 export default NavBar;

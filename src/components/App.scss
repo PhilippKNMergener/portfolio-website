@@ -3,19 +3,20 @@ $accentcolor: #00c4c4;
 $textcolor: #aaa;
 $brightcolor: #eee;
 
+@import "./NavBar/NavBar";
+@import "./SocialsBar/SocialsBar";
+@import "./Landing/Landing";
+
 .App {
   text-align: center;
-  background-color: $bgcolor;
+  background-color: white; //$bgcolor;
+  height: 100vh;
+  width: 100vw;
+  background: $bgcolor;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
 
-  .MainWrap {
-    height: 100vh;
-    width: 100vw;
-    scroll-behavior: smooth;
-    scroll-snap-type: y proximity;
-    overflow-y: scroll;
-
-    &::-webkit-scrollbar {
-      display: none;
-    }
+  &::-webkit-scrollbar {
+    display: none;
   }
 }
