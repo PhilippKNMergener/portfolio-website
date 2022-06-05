@@ -6,10 +6,15 @@ const SocialsBar = () => {
     <div className="SocialsBar">
       <hr className="BorderLine" />
       <div className="Icons">
-        <a href="" className="Icon">
+        <a
+          rel="noreferrer"
+          target="_blank"
+          href="https://twitter.com/philipp_knm"
+          className="Icon"
+        >
           <FiTwitter />
         </a>
-        <a href="" className="Icon">
+        <a href="https://github.com/PhilippKNMergener" className="Icon">
           <FiGithub />
         </a>
         <a href="" className="Icon">
