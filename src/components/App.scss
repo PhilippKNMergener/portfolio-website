@@ -1,4 +1,4 @@
-$bgcolor: #002222;
+$bgcolor: #001122;
 $accentcolor: #00c4c4;
 $textcolor: #aaa;
 $brightcolor: #eee;
@@ -10,7 +10,7 @@ $brightcolor: #eee;
 
 .App {
   text-align: center;
-  background-color: white; //$bgcolor;
+  background-color: $bgcolor;
   height: 100vh;
   width: 100vw;
   background: $bgcolor;
