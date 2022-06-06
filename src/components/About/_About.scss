@@ -1,0 +1,44 @@
+.About {
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: $textcolor;
+
+  .Left {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    text-align: start;
+    margin: 0px 350px;
+    color: $textcolor;
+
+    .AboutTitle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: start;
+      margin-bottom: 10px;
+
+      font-size: 25px;
+    }
+    .AboutText {
+      display: flex;
+      width: 500px;
+      align-items: center;
+      justify-content: center;
+      text-align: start;
+      font-size: 16px;
+      font-weight: 300;
+    }
+  }
+  .Right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $textcolor;
+  }
+}
