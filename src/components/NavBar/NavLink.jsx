@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const NavLink = ({ target }) => {
   return (
     <a href={`#${target}`} className="NavLink">
-      {`. ${target}`}
+      {`.${target}`}
     </a>
   );
 };

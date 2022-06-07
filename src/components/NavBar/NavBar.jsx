@@ -1,13 +1,12 @@
 import React from "react";
 import Logo from "./Logo";
 import NavLink from "./NavLink";
-import PropTypes from "prop-types";
 import Email from "./Email";
 
-const NavBar = ({ isAtTop }) => {
+const NavBar = () => {
   const sections = ["About", "Skills", "Projects", "Contact"];
   return (
-    <div className={`NavBar ${isAtTop && "atTop"}`}>
+    <div className="NavBar">
       <div className="NavWrap">
         <div className="NavLeft">
           <Logo />
@@ -23,7 +22,4 @@ const NavBar = ({ isAtTop }) => {
   );
 };
 
-NavBar.propTypes = {
-  isAtTop: PropTypes.bool,
-};
 export default NavBar;

@@ -1,7 +1,11 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-const AboutTitle = () => {
-  return <div className="AboutTitle">A Little About Me</div>;
+const AboutTitle = ({ text }) => {
+  return <div className="AboutTitle">{text}</div>;
 };
 
+AboutTitle.propTypes = {
+  text: PropTypes.string,
+};
 export default AboutTitle;

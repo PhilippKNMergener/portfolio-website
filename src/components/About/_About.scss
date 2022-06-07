@@ -4,8 +4,7 @@
   scroll-snap-align: start;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  color: $textcolor;
+  justify-content: space-evenly;
 
   .Left {
     display: flex;
@@ -14,7 +13,17 @@
     justify-content: center;
     text-align: start;
     margin: 0px 350px;
-    color: $textcolor;
+
+    .Section {
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+      width: 750px;
+      background: #000000cc;
+      padding: 25px;
+      margin: 20px 0px;
+      border-radius: 10px;
+    }
 
     .AboutTitle {
       display: flex;
@@ -23,16 +32,30 @@
       text-align: start;
       margin-bottom: 10px;
 
+      font-family: "Roboto Mono", monospace;
       font-size: 25px;
+      color: $brightcolor;
     }
+
     .AboutText {
       display: flex;
-      width: 500px;
       align-items: center;
       justify-content: center;
+      width: 750px;
       text-align: start;
+
       font-size: 16px;
       font-weight: 300;
+      line-height: 170%;
+      color: $textcolor;
+    }
+
+    .Professional {
+      box-shadow: -50px -50px 0px $accentcolor;
+    }
+
+    .Personal {
+      box-shadow: 50px 50px 0px $accentcolor;
     }
   }
   .Right {
